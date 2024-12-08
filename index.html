@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍳接火鍋遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hotpot Catcher Game</h1>
+        </header>
+
+        <section class="rules">
+            <h2>遊戲規則</h2>
+            <p>在 30 秒內接住火鍋料並獲取分數！目標是達到 <strong>50 分</strong> 以上，加油!😘</p>
+            <ul>
+                <li><strong>一號火鍋料</strong>（魚丸）：<span class="score">+5 分</span></li>
+                <li><strong>二號火鍋料</strong>（豆腐）：<span class="score">+4 分</span></li>
+                <li><strong>三號火鍋料</strong>（蟹棒）：<span class="score">+3 分</span></li>
+                <li><strong>炸彈</strong>：<span class="score">-4 分</span></li>
+            </ul>
+        </section>
+
+        <section class="controls">
+            <h2>操作方式</h2>
+            <p><strong>電腦</strong>：使用左右箭頭控制主角移動。</p>
+            <p><strong>手機</strong>：使用手機重力感應控制左右移動。</p>
+        </section>
+
+        <section class="game">
+            <div class="info">
+                <p>Time: <span id="timer">30</span>s | Score: <span id="score">0</span></p>
+            </div>
+            <input id="speedControl" type="range" min="1" max="10" value="5">
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+            <button id="startButton">Start</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2ede4; /* 莫蘭迪底色 */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* 標題樣式 */
+header h1 {
+    font-size: 2rem;
+    color: #4f4a41; /* 深咖啡莫蘭迪 */
+}
+
+/* 遊戲規則 */
+.rules, .controls {
+    margin: 15px auto;
+    padding: 10px;
+    max-width: 600px;
+    border: 1px solid #c3bcb3;
+    background-color: #e6dfd3;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rules ul, .controls p {
+    text-align: left;
+    color: #4f4a41;
+}
+
+/* 畫布樣式 */
+#gameCanvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #c3bcb3;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+/* 按鈕樣式 */
+#startButton {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #b8a89a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#startButton:hover {
+    background-color: #9f9184;
+}
+
+/* 滑桿樣式 */
+#speedControl {
+    margin: 15px auto;
+    width: 60%;
+}
+
+/* 記分板樣式 */
+.info {
+    font-size: 1.5rem;
+}
+
+/* 手機適配 */
+@media screen and (max-width: 768px) {
+    .info {
+        font-size: 2rem;
+    }
+
+    #gameCanvas {
+        width: 100%;
+    }
+}
